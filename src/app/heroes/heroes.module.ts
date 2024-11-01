@@ -4,6 +4,8 @@ import { HeroPagesComponent } from './pages/hero-pages/hero-pages.component';
 import { LayoutPagesComponent } from './pages/layout-pages/layout-pages.component';
 import { ListPagesComponent } from './pages/list-pages/list-pages.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { HeroesRoutingModule } from './heroes-routing.module';
+import { NewPageComponent } from './pages/new-page/new-page.component';
 
 
 
@@ -12,10 +14,12 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
     HeroPagesComponent,
     LayoutPagesComponent,
     ListPagesComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    NewPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HeroesRoutingModule,
   ]
 })
 export class HeroesModule { }
