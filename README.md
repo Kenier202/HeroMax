@@ -15,11 +15,13 @@ Repositorio: [HeroMax en GitHub](https://github.com/Kenier202/HeroMax)
 ## Instalación 🔧
 
 ### Requisitos previos
+
 - Asegúrate de tener **Node.js** y **Angular CLI** instalados en tu sistema:
   - [Node.js](https://nodejs.org/) (versión recomendada: 14.x o superior)
   - [Angular CLI](https://angular.io/cli) (versión recomendada: 13.x o superior)
 
 ### Pasos para la instalación
+
 1. Clona el repositorio en tu máquina local:
    ```bash
    git clone https://github.com/Kenier202/HeroMax.git
@@ -32,11 +34,17 @@ Repositorio: [HeroMax en GitHub](https://github.com/Kenier202/HeroMax)
    ```bash
    npm install
    ```
-4. Ejecuta la aplicación en un servidor de desarrollo:
+4. Levantar backend:
    ```bash
-   ng serve
+   npm run backend
    ```
-5. Abre el navegador y visita `http://localhost:4200` para ver la aplicación en funcionamiento.
+5. Ejecuta la aplicación en un servidor de desarrollo:
+
+   ```bash
+   ng serve -o
+   ```
+
+6. Abre el navegador y visita `http://localhost:4200` para ver la aplicación en funcionamiento.
 
 ## Tecnologías utilizadas 🛠️
 
@@ -52,6 +60,7 @@ Repositorio: [HeroMax en GitHub](https://github.com/Kenier202/HeroMax)
 ## Contribuciones 🤝
 
 Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, sigue estos pasos:
+
 1. Haz un fork del repositorio.
 2. Crea una nueva rama para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`).
 3. Realiza los cambios y crea un commit (`git commit -m 'Añadir nueva funcionalidad'`).
