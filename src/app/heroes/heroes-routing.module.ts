@@ -16,7 +16,7 @@ const routes: Routes = [
         component: NewPageComponent
       },
       {
-        path: 'search ',
+        path: 'search',
         component: SearchPageComponent
       }
       ,{
