@@ -7,6 +7,7 @@ import { MaterialModule } from '../material/material.module';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { NgModule } from '@angular/core';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
     ListPagesComponent,
     NewPageComponent,
     SearchPageComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
