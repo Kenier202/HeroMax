@@ -8,6 +8,7 @@ import { NewPageComponent } from './pages/new-page/new-page.component';
 import { NgModule } from '@angular/core';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { CardComponent } from './components/card/card.component';
+import { HeroImagePipe } from './pipes/hero-image.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CardComponent } from './components/card/card.component';
     NewPageComponent,
     SearchPageComponent,
     CardComponent,
+    HeroImagePipe,
   ],
   imports: [
     CommonModule,
