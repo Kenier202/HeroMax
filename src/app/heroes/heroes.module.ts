@@ -9,6 +9,8 @@ import { NgModule } from '@angular/core';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
     CommonModule,
     HeroesRoutingModule,
     MaterialModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule
   ]
 })
 export class HeroesModule { }
