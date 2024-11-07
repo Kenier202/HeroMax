@@ -1,4 +1,4 @@
-import { catchError, map, Observable, of } from 'rxjs';
+import { catchError, map, Observable, of, tap } from 'rxjs';
 import { enviroment } from '../../../enviroments/enviroment';
 import { Heroe } from '../interfaces/hero.interface';
 import { HttpClient } from '@angular/common/http';
