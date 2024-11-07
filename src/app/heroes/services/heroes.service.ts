@@ -1,4 +1,4 @@
-import { catchError, Observable, of } from 'rxjs';
+import { catchError, map, Observable, of } from 'rxjs';
 import { enviroment } from '../../../enviroments/enviroment';
 import { Heroe } from '../interfaces/hero.interface';
 import { HttpClient } from '@angular/common/http';
@@ -21,6 +21,10 @@ export class HeroesService {
 
   getSuggestions(query : string): Observable<Heroe[]>{
     return this.httpClient.get<Heroe[]>(`${this.baseURL}/heroes?q=${query}&_limit=6`);
-
   }
+
+  addHero(hero: Heroe): Observable<Heroe>{
+    return this.httpClient.post<Heroe>(`${this.baseURL}/heroes`, hero);
+  }
+
 }
