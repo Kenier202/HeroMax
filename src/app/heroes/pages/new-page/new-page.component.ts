@@ -5,6 +5,7 @@ import { HeroesService } from '../../services/heroes.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { map, switchMap } from 'rxjs';
 import { HeroImagePipe } from '../../pipes/hero-image.pipe';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-new-page',
@@ -31,6 +32,7 @@ export class NewPageComponent implements OnInit{
     private heroesService: HeroesService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    private snackbar : MatSnackBar
 
   )
     { }
@@ -64,12 +66,19 @@ export class NewPageComponent implements OnInit{
     if(this.currentHero.id){
       this.heroesService.updateHero(this.currentHero)
       .subscribe(hero =>{
+        this.showSnackBar(`${hero.superhero} updated` !);
       } );
       return;
     }
 
     this.heroesService.addHero(this.currentHero)
-    .subscribe(hero =>{} );
+    .subscribe(hero =>{
+    this.router.navigate(['/heroes/edit', hero.id]);
+    } );
     return;
+  }
+
+  showSnackBar(message: string){
+    this.snackbar.open(message, "cerrar", { duration: 2500 });
   }
 }
